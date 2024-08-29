@@ -67,8 +67,6 @@ function exibircidadefornecida(dados) {
             flex-flow: row nowrap;
             justify-content: space-evenly;
             align-items: center;
-            background-color: white;
-            background-image: none;
         `;
 
         //Criação dinâmica da div divcidadetemp
@@ -91,12 +89,10 @@ function exibircidadefornecida(dados) {
         paragrafo1.innerHTML = `&#127758; Latitude: ${dados.metadata.latitude}`;
         paragrafo2.innerHTML = `&#127758; Longitude: ${dados.metadata.longitude}`;
         paragrafo3.innerHTML = `&#9201; Fuso-horário: ${dados.metadata.timezone_abbrevation}`;
-        divtemperatura.innerHTML = `&#9728;&#65039;${dados.data_current.temperature}°C`;
+        divtemperatura.innerHTML = `&#9925;&#65039;${dados.data_current.temperature}°C`;
 
         //Estilo da div divcidadetemp
         divcidadetemp.style.cssText = `
-            width: 500px;
-            background-image: url(../images/background-nuvens.jpg);
             padding: 10px;
         `;
         titulo.style.cssText = `
@@ -121,17 +117,56 @@ function exibircidadefornecida(dados) {
         `;
 
         divtemperatura.style.cssText = `
-            background-color: rgba(0, 0, 0, 0.712);
-            color: rgba(255, 255, 255, 0.616);
+            width: 100%;
+            color: rgba(0, 0, 0, 0.712);
             font-size: 40px;
             text-align: center;
-            padding: 30px
-            border radius: 5px;
+            padding: 10px;
         `;
 
         //Criação dinâmica da div divinfoadd
         const divinfoadd = document.createElement('div');
         sectioncidadefornecida.appendChild(divinfoadd);
+
+        const paragrafo4 = document.createElement('p');
+        const paragrafo5 = document.createElement('p');
+        const paragrafo6 = document.createElement('p');
+        const paragrafo7 = document.createElement('p');
+        divinfoadd.appendChild(paragrafo4);
+        divinfoadd.appendChild(paragrafo5);
+        divinfoadd.appendChild(paragrafo6);
+        divinfoadd.appendChild(paragrafo7);
+
+        //Conteúdo da div divinfoadd
+        paragrafo4.innerHTML = `&#10052;&#65039; Temperatura mínima: ${dados.data_day.temperature_min[0]}°C`;
+        paragrafo5.innerHTML = `&#9728;&#65039; Temperatura máxima: ${dados.data_day.temperature_max[0]}°C`;
+        paragrafo6.innerHTML = `&#128167; Umidade relativa média: ${dados.data_day.relativehumidity_mean[0]}%`;
+        paragrafo7.innerHTML = `&#127811; Velocidade média do vento: ${dados.data_day.windspeed_mean[0]} m/s`;
+
+        //Estilo da div divinfoadd
+        divinfoadd.style.cssText = `
+            padding: 10px;
+        `;
+        paragrafo4.style.cssText = `
+            color: rgba(0, 0, 0, 0.712);
+            font-size: 20px;
+            padding: 20px;
+        `;
+        paragrafo5.style.cssText = `
+            rgba(0, 0, 0, 0.712);
+            font-size: 20px;
+            padding: 20px;
+        `;
+        paragrafo6.style.cssText = `
+            rgba(0, 0, 0, 0.712);
+            font-size: 20px;
+            padding: 20px;
+        `;
+        paragrafo7.style.cssText = `
+            rgba(0, 0, 0, 0.712);
+            font-size: 20px;
+            padding: 20px;
+        `;
         
     } else {
         console.log('Elemento para exibir dados não encontrado.');
