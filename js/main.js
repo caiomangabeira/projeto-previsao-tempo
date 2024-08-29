@@ -1,6 +1,6 @@
 const botao = document.getElementById('botaobuscar');
 const itxtcidade = document.getElementById('itxtcidade');
-const sectioncidadefornecida = document.querySelector('.cidadefornecida')
+const sectioncidadefornecida = document.querySelector('.cidadefornecida');
 const divcf = document.querySelector('.divcf');
 
 async function obterCoordenadas(cidade) {
@@ -175,6 +175,12 @@ function exibircidadefornecida(dados) {
 
 botao.addEventListener("click", async () => {
     const valorCidade = itxtcidade.value;
+    const valorCidade2 = itxtcidade.value.trim();
+
+    if (valorCidade2 === "") {
+        window.alert("Por favor, insira o nome de uma cidade.");
+        return;
+    }
     const coordenadas = await obterCoordenadas(valorCidade);
 
     if (coordenadas) {

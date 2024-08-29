@@ -9,7 +9,10 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: rgba(211, 211, 211, 0.541);
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 header.container {
@@ -48,6 +51,10 @@ header div.busca input:focus {
     color: white;
 }
 
+header div.busca input:not(:focus) {
+    color: white;
+}
+
 header div.busca input::placeholder {
     color: rgba(241, 241, 241, 0.548);
 }
@@ -81,7 +88,6 @@ main {
 }
 
 section {
-    height: 400px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
@@ -95,20 +101,13 @@ section.cidadefornecida {
     background-image: url(../images/background-nuvens.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 10px;
+    margin-top: 160px;
+    margin-bottom: 160px;
 }
 
 section.cidadefornecida div.divcf {
     color: rgba(0, 0, 0, 0.527);
-    padding: 50px;
-}
-
-section.cidadevarias {
-    display: flex;
-}
-
-section.conceitos {
-    margin-top: 10px;
+    padding: 80px;
 }
 
 footer {
