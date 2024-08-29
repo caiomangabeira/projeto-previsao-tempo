@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(211, 211, 211, 0.541);
+}
+
+header.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(15, 97, 179, 0.726);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+header h1 span {
+    font-size: 12px;
+}
+
+header .busca input {
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.288);
+    text-align: center;
+    padding: 15px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+header .busca input::placeholder {
+    color: rgba(241, 241, 241, 0.548);
+    text-align: left;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(5, 5, 97, 0.829);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section {
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+section.cidadefornecida {
+    margin-bottom: 10px;
+}
+
+section.cidadevarias {
+    
+}
+
+section.conceitos {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
