@@ -119,25 +119,25 @@ footer {
 
 @media (max-width: 1024px) and (min-width: 768px) {
     header div.busca input {
-        width: 70vw; 
+        width: 70vw;
     }
 
     header div.busca input#botaobuscar {
-        width: 100px; 
+        width: 100px;
     }
 
     header h1 {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     nav {
-        font-size: 14px; 
-        padding: 10px; 
+        font-size: 14px;
+        padding: 10px;
     }
 
     main {
-        width: 90vw; 
-        margin-top: 80px; 
+        width: 90vw;
+        margin-top: 80px;
         margin-bottom: 80px;
     }
 
@@ -148,42 +148,50 @@ footer {
 
 @media (max-width: 767px) {
     header {
-        flex-direction: column; 
-        padding: 10px; 
+        flex-direction: column;
+        padding: 10px;
     }
 
     header h1 {
-        font-size: 14px; 
-        padding: 5px; 
+        font-size: 14px;
+        padding: 5px;
     }
 
     header div.busca input {
-        width: 90vw; 
+        width: 90vw;
         padding: 10px;
     }
 
     header div.busca input#botaobuscar {
         width: 100px;
-        padding: 10px; 
+        padding: 10px;
     }
 
     nav {
-        font-size: 12px; 
-        padding: 8px; 
+        font-size: 12px;
+        padding: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     main {
-        width: 95vw; 
-        margin-top: 50px; 
-        margin-bottom: 50px; 
+        width: 95vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     section.cidadefornecida {
-        margin-top: 80px; 
-        margin-bottom: 80px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
     section.cidadefornecida div.divcf {
-        padding: 20px; 
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
     }
 }
