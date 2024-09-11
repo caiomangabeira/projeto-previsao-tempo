@@ -186,10 +186,13 @@ footer {
         margin-bottom: 40px;
         padding: 10px;
         box-sizing: border-box;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        align-items: center; /* Centraliza os itens */
     }
 
     section.cidadefornecida div.divcf {
         padding: 20px;
+        width: 100%;
         box-sizing: border-box;
         overflow: hidden;
         text-align: center;
