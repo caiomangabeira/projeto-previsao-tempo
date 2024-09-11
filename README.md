@@ -1,2 +1,2 @@
 # projeto-previsao-tempo
- Site que mostra a previsão do tempo de um local por meio de requisições
+ Esta é uma pagina que exibe a previsão do tempo de uma cidade por meio de requisições. Primeiro, ao usuário digitar o nome de uma cidade e enviar, uma requisição é feita para obter as coordenadas dessa cidade, através de uma API. Depois, utilizando as coordenadas retornadas por essa API, outra requisição é feita, retornando dados meteorológicos da cidade e exibindo para o usuário.
